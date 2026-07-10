@@ -189,6 +189,56 @@ This dataset will be used in the next parts of the capstone project.
 
 ---
 
+## Overall Workflow
+
+```text
+Raw Dataset (laptopData.csv)
+            │
+            ▼
+Load Dataset
+            │
+            ▼
+Initial Inspection
+(Head, Shape, Data Types)
+            │
+            ▼
+Missing Value Analysis
+            │
+            ▼
+Median Imputation
+            │
+            ▼
+Duplicate Detection & Removal
+            │
+            ▼
+Data Type Correction
+            │
+            ▼
+Descriptive Statistics
+            │
+            ▼
+Skewness Analysis
+            │
+            ▼
+Outlier Detection (IQR)
+            │
+            ▼
+Data Visualization
+(Line, Bar, Histogram,
+Scatter, Box Plot)
+            │
+            ▼
+Correlation Analysis
+(Pearson & Spearman)
+            │
+            ▼
+Grouped Aggregation
+            │
+            ▼
+Save cleaned_data.csv
+
+---
+
 ## How to Run
 
 1. Install the required libraries.
