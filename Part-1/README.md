@@ -4,7 +4,7 @@
 
 ### Project Overview
 
-The objective of this part is to understand the dataset before building any machine learning model. The dataset was loaded, cleaned, analyzed and visualized using different EDA techniques. A cleaned dataset was generated which will be used in Part 2 and Part 3 of the capstone project.
+The objective of this part is to understand the dataset before building any machine learning model. The dataset was loaded, cleaned, analyzed, and visualized using different EDA techniques. A cleaned dataset was generated which will be used in Part 2 and Part 3 of the capstone project.
 
 ---
 
@@ -16,7 +16,7 @@ The objective of this part is to understand the dataset before building any mach
 
 **Link:** https://www.kaggle.com/datasets/ehtishamsadiq/uncleaned-laptop-price-dataset
 
-The dataset contains laptop specifications such as company, RAM, processor, storage, operating system, weight and screen size along with the laptop price.
+The dataset contains laptop specifications such as company, RAM, processor, storage, operating system, weight, and screen size along with the laptop price.
 
 ### Why this dataset?
 
@@ -31,7 +31,7 @@ I selected this dataset because it satisfies the project requirements:
 
 ## Project Structure
 
-```
+```text
 Part-1/
 │
 ├── data/
@@ -88,9 +88,9 @@ Part-1/
 
 The following changes were made:
 
-- Removed unnecessary index column.
-- Converted `Inches`, `Ram` and `Weight` to numeric.
-- Converted `Company`, `TypeName` and `OpSys` to category datatype.
+- Removed the unnecessary index column.
+- Converted `Inches`, `Ram`, and `Weight` to numeric.
+- Converted `Company`, `TypeName`, and `OpSys` to the `category` datatype.
 - Compared memory usage before and after conversion.
 
 ---
@@ -147,25 +147,22 @@ The correlation does not necessarily imply causation because other hardware spec
 
 ## Task 9 – Additional Analysis
 
-### 9a
+### 9a – Mean vs Median Comparison
 
-Compared mean and median for the two most skewed columns before imputation.
+Compared the mean and median for the two most skewed columns before imputation.
 
 Median was selected because it is more robust to skewed data.
 
-### 9b
+### 9b – Spearman Correlation
 
-Calculated Spearman correlation matrix.
+- Calculated the Spearman correlation matrix.
+- Compared Pearson and Spearman correlations.
+- Identified the three feature pairs with the largest differences.
+- Pearson correlation will be used as the primary guide for feature selection in Part 2.
 
-Compared Pearson and Spearman correlations.
+### 9c – Grouped Aggregation
 
-Identified the three feature pairs with the largest differences.
-
-Pearson correlation will be used as the primary guide for feature selection in Part 2.
-
-### 9c
-
-Performed grouped aggregation using Company and Price.
+Performed grouped aggregation using **Company** and **Price**.
 
 Calculated:
 
@@ -173,7 +170,7 @@ Calculated:
 - Standard Deviation
 - Count
 
-Razer had the highest average laptop price, while the large ratio between the highest and lowest mean suggests that Company carries useful predictive information.
+Razer had the highest average laptop price, while the large ratio between the highest and lowest mean suggests that **Company** carries useful predictive information.
 
 ---
 
@@ -181,7 +178,7 @@ Razer had the highest average laptop price, while the large ratio between the hi
 
 The cleaned dataset was saved as:
 
-```
+```text
 cleaned_data.csv
 ```
 
@@ -224,8 +221,9 @@ Outlier Detection (IQR)
             │
             ▼
 Data Visualization
-(Line, Bar, Histogram,
-Scatter, Box Plot)
+(Line Plot, Bar Chart,
+Histogram, Scatter Plot,
+Box Plot)
             │
             ▼
 Correlation Analysis
@@ -236,22 +234,21 @@ Grouped Aggregation
             │
             ▼
 Save cleaned_data.csv
+```
 
 ---
-
-```
 
 ## How to Run
 
 1. Install the required libraries.
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 2. Open the notebook.
 
-```
+```text
 notebooks/Capstone_Project_Masai_Part1.ipynb
 ```
 
@@ -261,4 +258,4 @@ notebooks/Capstone_Project_Masai_Part1.ipynb
 
 ## Conclusion
 
-The raw dataset was successfully cleaned and analyzed. Missing values, duplicate rows and incorrect data types were handled. Outliers and correlations were studied, and several visualizations were created to understand the data. The cleaned dataset is now ready for feature engineering and machine learning in Part 2.
+The raw dataset was successfully cleaned and analyzed. Missing values, duplicate rows, and incorrect data types were handled. Outliers and correlations were studied, and several visualizations were created to better understand the data. The cleaned dataset is now ready for feature engineering and machine learning in Part 2.
