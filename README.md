@@ -104,6 +104,8 @@ The LLM integration was initially implemented using the OpenRouter API. During t
 
 ---
 
+## Author
+
 **Ishwar Devnarayan Vishwakarma**
 
 Applied AI & ML Capstone Project
